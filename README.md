@@ -85,11 +85,11 @@ This will start the API on:
 🧪 Test Credentials
 
 Admin User:
-	•	Email: admin@example.com
-	•	Password: admin123
+- Email: admin@example.com
+- Password: admin123
 
 Visitor User:
-	•	Email: visitor@example.com
-	•	Password: visitor123
+- Email: visitor@example.com
+- Password: visitor123
 
 You can also register new users with the form.
