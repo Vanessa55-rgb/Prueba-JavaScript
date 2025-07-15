@@ -1,0 +1,44 @@
+
+{
+  "users": [
+    {
+      "id": "1",
+      "fullName": "Admin User",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "fullName": "Visitor User",
+      "email": "visitor@example.com",
+      "password": "visitor123",
+      "role": "visitor"
+    }
+  ],
+  "events": [
+    {
+      "id": "1",
+      "name": "Karthi",
+      "description": "Lorem ipsum lorem ipsum lorem ipsum.",
+      "capacity": 12,
+      "date": "2025-12-08",
+      "enrolled": 0
+    },
+    {
+      "id": "2",
+      "name": "Karthi",
+      "description": "Lorem ipsum lorem ipsum lorem ipsum.",
+      "capacity": 12,
+      "date": "2025-12-08",
+      "enrolled": 5
+    }
+  ],
+  "enrollments": [
+    {
+      "id": "1",
+      "eventId": 2,
+      "userId": 2
+    }
+  ]
+}
