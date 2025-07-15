@@ -1,0 +1,49 @@
+
+/* General reset and body tweaks */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Views spacing */
+  #app > div {
+    padding-top: 20px;
+  }
+  
+  /* Auth form boxes */
+  #login-view, #register-view {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Not found view */
+  #not-found-view h1 {
+    font-size: 2.5rem;
+  }
+  
+  /* Table row hover */
+  table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Button spacing inside tables */
+  table .btn {
+    margin-right: 0.25rem;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    #create-event-form .col-md-2,
+    #create-event-form .col-md-3 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    #create-event-form .btn {
+      margin-top: 0.5rem;
+    }
+  }
