@@ -44,6 +44,8 @@ It allows two types of users: **Administrators** and **Visitors** to manage and 
 ---
 
 ## 📁 Folder Structure
+
+```
 event-manager-spa/
 ├── db.json          # JSON database for json-server
 ├── index.html       # Main HTML (SPA structure)
@@ -51,8 +53,8 @@ event-manager-spa/
 ├── style.css        # Custom styles
 ├── Event Manager API.postman_collection.json   # POSTMAN Collection
 └── README.md        # Project documentation
+```
 
----
 
 ## 🧪 Requirements
 
