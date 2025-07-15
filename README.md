@@ -61,23 +61,24 @@ event-manager-spa/
 
 ```bash
 npm install -g json-server
+```
 
 💻 How to Run the Project
-	1.	Clone this repository or download the files.
-	2.	Start the json-server:
+1.	Clone this repository or download the files.
+2.	Start the json-server:
+```bash
+json-server --watch db.json
+ ```
+This will start the API on:
+📡 http://localhost:3000/
 
-    json-server --watch db.json
-    
-	This will start the API on:
-	📡 http://localhost:3000/
+3.	Open index.html in your browser:
 
-	3.	Open index.html in your browser:
+•	Double-click or open with Live Server / Browser.
+•	The SPA will auto-detect the user session.
+•	You can register or login using the UI.
 
-	•	Double-click or open with Live Server / Browser.
-	•	The SPA will auto-detect the user session.
-	•	You can register or login using the UI.
-
-⸻
+---
 
 🧪 Test Credentials
 
