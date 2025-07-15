@@ -76,9 +76,9 @@ This will start the API on:
 
 3.	Open index.html in your browser:
 
--Double-click or open with Live Server / Browser.
--The SPA will auto-detect the user session.
--You can register or login using the UI.
+- Double-click or open with Live Server / Browser.
+- The SPA will auto-detect the user session.
+- You can register or login using the UI.
 
 ---
 
