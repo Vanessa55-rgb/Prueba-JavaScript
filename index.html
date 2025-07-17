@@ -2,116 +2,186 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Event Manager SPA</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1828/1828970.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
-<body class="bg-light">
+<body>
+  <canvas id="background"></canvas>
 
-  <div class="container py-5" id="app">
+  <header class="hero">
+    <h1>Vanessa Gómez 👩🏼‍💻</h1>
+    <p>Ingeniera de Software en formación | Coder en Riwi 🚀</p>
+    <a href="#HTMLyCSS" class="btn-cta">HTML y CSS</a>
+    <a href="#JAVASCRIPT" class="btn-cta">JAVASCRIPT</a>
+  </header>
 
-    <!-- Login View -->
-    <div id="login-view" class="d-none">
-      <h2 class="mb-4">Login</h2>
-      <form id="login-form">
-        <div class="mb-3">
-          <input type="email" class="form-control" id="login-email" placeholder="Email" required />
-        </div>
-        <div class="mb-3">
-          <input type="password" class="form-control" id="login-password" placeholder="Password" required />
-        </div>
-        <button type="submit" class="btn btn-primary">Login</button>
-        <p class="mt-2">No account? <a href="#" id="go-register">Register</a></p>
-      </form>
-    </div>
+  <section class="about" id="about">
+    <h2>Sobre mí</h2>
+    <img src="./foto.jpg" alt="Foto de Vanessa Gómez" class="foto-vanessa" />
+    <p>
+      Soy estudiante de Ingeniería de Software en Fundación Universitaria María Cano y estoy en formación como Coder en Riwi.
+      <br>
+      Me apasiona el desarrollo web, el diseño moderno y aprender nuevas tecnologías para crear soluciones que impacten positivamente.
+    </p>
+  </section>
 
-    <!-- Register View -->
-    <div id="register-view" class="d-none">
-      <h2 class="mb-4">Register</h2>
-      <form id="register-form">
-        <div class="mb-3">
-          <input type="text" class="form-control" id="register-name" placeholder="Full Name" required />
-        </div>
-        <div class="mb-3">
-          <input type="email" class="form-control" id="register-email" placeholder="Email" required />
-        </div>
-        <div class="mb-3">
-          <input type="password" class="form-control" id="register-password" placeholder="Password" required />
-        </div>
-        <div class="mb-3">
-          <select class="form-select" id="register-role" required>
-            <option value="">Select role</option>
-            <option value="visitor">Visitor</option>
-            <option value="admin">Admin</option>
-          </select>
-        </div>
-        <button type="submit" class="btn btn-success">Register</button>
-        <p class="mt-2">Already have an account? <a href="#" id="go-login">Login</a></p>
-      </form>
-    </div>
-
-    <!-- Dashboard View -->
-    <div id="dashboard-view" class="d-none">
-      <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2>Dashboard</h2>
-        <div>
-          <span class="me-3 fw-bold" id="user-info"></span>
-          <button class="btn btn-outline-danger btn-sm" id="logout-btn">Logout</button>
-        </div>
+  <section class="repos" id="HTMLyCSS">
+    <h2>HTML y CSS </h2>
+    <div class="repo-container">
+      <div class="repo-card">
+        <img src="https://img.freepik.com/foto-gratis/prueba-codigo-renderizado-3d-prueba-usabilidad-funcional_107791-16607.jpg?w=600&h=400&fit=crop" alt="Proyecto" />
+        <h3>Entrenamiento-MOD2_SEM1</h3>
+        <a href="https://vanessa55-rgb.github.io/Entrenamiento-MOD2_SEM1/" target="_blank">Ver repositorio</a>
+      </div>
+      <div class="repo-card">
+        <img src="https://img.freepik.com/vector-gratis/desarrollo-aplicaciones-escritorio-telefonos-inteligentes_23-2148683810.jpg?w=600&h=400&fit=crop" alt="Proyecto" />
+        <h3>Ejercicios-HTML</h3>
+        <a href="https://vanessa55-rgb.github.io/Ejercicios-HTML/" target="_blank">Ver repositorio</a>
+      </div>
+      <div class="repo-card">
+        <img src="https://img.freepik.com/vector-gratis/desarrollo-nuevas-aplicaciones-escritorio_23-2148684987.jpg?w=600&h=400&fit=crop" alt="Proyecto" />
+        <h3>Ejemplos-listas-HTML</h3>
+        <a href="https://vanessa55-rgb.github.io/Ejemplos-listas-HTML/" target="_blank">Ver repositorio</a>
+      </div>
+      <div class="repo-card">
+        <img src="https://img.freepik.com/vector-premium/lenguaje-programacion-computadoras-isometrica-sale-caja_47328-1993.jpg?ga=GA1.1.626444409.1750565419&semt=ais_hybrid&w=740" alt="Proyecto" />
+        <h3>Primer-Ejercicio-HTML</h3>
+        <a href="https://vanessa55-rgb.github.io/Primer-Ejercicio-HTML/" target="_blank">Ver repositorio</a>
+      </div>
+      <div class="repo-card">
+        <img src="https://img.freepik.com/foto-gratis/prueba-codigo-renderizado-3d-prueba-usabilidad-funcional_107791-16607.jpg?w=600&h=400&fit=crop" alt="Proyecto" />
+        <h3>Entrenamiento-MOD2_SEM2</h3>
+        <a href="https://vanessa55-rgb.github.io/Vanessa55-rgb-Entrenamiento-MOD2_SEM2/" target="_blank">Ver repositorio</a>
+      </div>
+      <div class="repo-card">
+        <img src="https://img.freepik.com/vector-premium/creacion-redes-aplicaciones-lenguajes-programacion_999616-2748.jpg?w=600&h=400&fit=crop" alt="Proyecto" />
+        <h3>Actividad-1-Restaurante</h3>
+        <a href="https://vanessa55-rgb.github.io/Actividad-1-Restaurante/" target="_blank">Ver repositorio</a>
+      </div>
+      <div class="repo-card">
+        <img src="https://img.freepik.com/vector-gratis/diseno-web-produccion-mantenimiento-sitios-web-grafico-web-diseno-interfaz-sitio-web-receptivo-ingenieria-software-desarrollo-colorido-icono_335657-2699.jpg?w=600&h=400&fit=crop" alt="Proyecto" />
+        <h3>Actividad-2-Landing-page</h3>
+        <a href="https://vanessa55-rgb.github.io/Actividad-2-Landing-page/" target="_blank">Ver repositorio</a>
+      </div>
+      <div class="repo-card">
+          <img src="https://img.freepik.com/psd-premium/desarrollo-web-3d-o-desarrollo-software-o-codificacion-programacion-diseno-web_566602-158.jpg?ga=GA1.1.626444409.1750565419&semt=ais_hybrid&w=740" alt="Icono Proyecto" />
+          <h3>Aprendiendo-CSS</h3>
+          <a href="https://vanessa55-rgb.github.io/Aprendiendo-CSS/" target="_blank">Ver repositorio</a>
+      </div>
+      <div class="repo-card">
+          <img src="https://img.freepik.com/foto-gratis/prueba-codigo-renderizado-3d-prueba-usabilidad-funcional_107791-16607.jpg?w=600&h=400&fit=crop" alt="Icono Proyecto" />
+          <h3>Entrenamiento-MOD2_SEM3</h3>
+          <a href="https://vanessa55-rgb.github.io/Entrenamiento-MOD2_SEM3/" target="_blank">Ver repositorio</a>
+      </div>
+      <div class="repo-card">
+        <img src="https://img.freepik.com/vector-premium/iconos-3d_921084-2405.jpg?w=600&h=400&fit=crop" alt="Proyecto" />
+        <h3>Carta-Imagen</h3>
+        <a href="https://vanessa55-rgb.github.io/Carta-Imagen/" target="_blank">Ver repositorio</a>
+      </div>
+      <div class="repo-card">
+          <img src="https://img.freepik.com/fotos-premium/hombre-indio-programador-pie-frente-pantalla-codigo-proyectado-presentacion_660230-9615.jpg?ga=GA1.1.626444409.1750565419&semt=ais_hybrid&w=740" alt="Icono Proyecto" />
+          <h3>Trabajo-Feria---APT-33</h3>
+          <a href="https://github.com/MateoAlRen/Trabajo-Feria---APT-33" target="_blank">Ver repositorio</a>
       </div>
 
-      <!-- Admin Controls -->
-      <div id="admin-controls" class="mb-4 d-none">
-        <h4>Create Event</h4>
-        <form id="create-event-form" class="row g-2">
-          <div class="col-md-3">
-            <input type="text" class="form-control" id="event-name" placeholder="Event Name" required />
-          </div>
-          <div class="col-md-3">
-            <input type="text" class="form-control" id="event-description" placeholder="Description" required />
-          </div>
-          <div class="col-md-2">
-            <input type="number" class="form-control" id="event-capacity" placeholder="Capacity" required />
-          </div>
-          <div class="col-md-2">
-            <input type="date" class="form-control" id="event-date" required />
-          </div>
-          <div class="col-md-2">
-            <button type="submit" class="btn btn-primary w-100">Add Event</button>
-          </div>
-        </form>
+      <div class="repo-card">
+          <img src="https://img.freepik.com/vector-gratis/subiendo-al-almacenamiento-nube-acceso-inalambrico-informacion-servicio-online-hosting-global-espacio-virtual-escritorio-disponible-seguro-ilustracion-metafora-concepto-aislado-vector_335657-1991.jpg?ga=GA1.1.626444409.1750565419&semt=ais_hybrid&w=740" alt="Icono Proyecto" />
+          <h3>Freelancer</h3>
+          <a href="https://vanessa55-rgb.github.io/freelancer-/" target="_blank">Ver repositorio</a>
       </div>
+      <div class="repo-card">
+          <img src="https://img.freepik.com/vector-premium/laptop-pagina-web-simbolo-codigo-icono-vectorial-3d-rueda-dentada-engranajes_365941-1251.jpg?ga=GA1.1.626444409.1750565419&semt=ais_hybrid&w=740" alt="Icono Proyecto" />
+          <h3>Mini-OS</h3>
+          <a href="https://vanessa55-rgb.github.io/mini-OS/" target="_blank">Ver repositorio</a>
+      </div>
+      <div class="repo-card">
+        <img src="https://img.freepik.com/vector-gratis/ilustracion-colorida-programador-trabajando_23-2148281410.jpg?ga=GA1.1.626444409.1750565419&semt=ais_hybrid&w=740" alt="Icono Proyecto" />
+        <h3>Final</h3>
+        <a href="https://github.com/Vanessa55-rgb/finalvanessa.git" target="_blank">Ver repositorio</a>
+      </div>
+  </section>
 
-      <!-- Events Table -->
-      <div>
-        <h4 class="mb-3">Events</h4>
-        <table class="table table-bordered" id="events-table">
-          <thead class="table-dark">
-            <tr>
-              <th>Name</th>
-              <th>Description</th>
-              <th>Date</th>
-              <th>Capacity</th>
-              <th>Enrolled</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody id="events-body">
-            <!-- Filled dynamically -->
-          </tbody>
-        </table>
+  <section class="repos" id="JAVASCRIPT">
+    <h2>JAVASCRIPT</h2>
+    <div class="repo-container">
+      <div class="repo-card">
+          <img src="https://img.freepik.com/foto-gratis/prueba-codigo-renderizado-3d-prueba-usabilidad-funcional_107791-16607.jpg?w=600&h=400&fit=crop" alt="Icono Proyecto" />
+          <h3>Entrenamiento-MOD3_SEM1</h3>
+          <a href="https://vanessa55-rgb.github.io/Entrenamiento-MOD3_SEM1/" target="_blank">Ver repositorio</a>
+          </div>
+      <div class="repo-card">
+          <img src="https://img.freepik.com/vector-gratis/programadores-que-utilizan-lenguaje-programacion-javascript-computadora-gente-pequena-lenguaje-javascript-motor-javascript-concepto-desarrollo-web-js-ilustracion-aislada-violeta-vibrante-brillante_335657-986.jpg?ga=GA1.1.626444409.1750565419&semt=ais_hybrid&w=740" alt="Icono Proyecto" />
+          <h3>Inicios-JavaScript</h3>
+          <a href="https://vanessa55-rgb.github.io/Inicios-JavaScript/" target="_blank">Ver repositorio</a>
+      </div>
+      <div class="repo-card">
+          <img src="https://img.freepik.com/psd-gratis/ilustracion-masculina-desarrollador-iconos-3d-nft_629802-6.jpg?ga=GA1.1.626444409.1750565419&semt=ais_hybrid&w=740" alt="Icono Proyecto" />
+          <h3>Juego-Superficie</h3>
+          <a href="https://vanessa55-rgb.github.io/Juego-Superficie/" target="_blank">Ver repositorio</a>
+      </div>
+      <div class="repo-card">
+        <img src="https://img.freepik.com/foto-gratis/prueba-codigo-renderizado-3d-prueba-usabilidad-funcional_107791-16607.jpg?w=600&h=400&fit=crop" alt="Icono Proyecto" />
+        <h3>Entrenamiento-MOD3_SEM2</h3>
+        <a href="https://vanessa55-rgb.github.io/Entrenamiento-MOD3_SEM2/" target="_blank">Ver repositorio</a>
+      </div>
+      <div class="repo-card">
+        <img src="https://img.freepik.com/vector-premium/lenguaje-programacion-computadoras-isometrica-sale-caja_47328-1993.jpg?ga=GA1.1.626444409.1750565419&semt=ais_hybrid&w=740" alt="Icono Proyecto" />
+        <h3>Login</h3>
+        <a href="https://vanessa55-rgb.github.io/Login/" target="_blank">Ver repositorio</a>
+      </div>
+      <div class="repo-card">
+        <img src="https://img.freepik.com/vector-premium/lenguaje-programacion-computadoras-isometrica-sale-caja_47328-1993.jpg?ga=GA1.1.626444409.1750565419&semt=ais_hybrid&w=740" alt="Icono Proyecto" />
+        <h3>Ejercicios-Clousures</h3>
+        <a href="https://vanessa55-rgb.github.io/Ejercicios-Clousures/" target="_blank">Ver repositorio</a>
+      </div>
+      <div class="repo-card">
+        <img src="https://img.freepik.com/vector-gratis/diseno-web-produccion-mantenimiento-sitios-web-grafico-web-diseno-interfaz-sitio-web-receptivo-ingenieria-software-desarrollo-colorido-icono_335657-2699.jpg?w=600&h=400&fit=crop" alt="Icono Proyecto" />
+        <h3>Crudy</h3>
+        <a href="https://san1000-ark.github.io/Crudy/" target="_blank">Ver repositorio</a>
+      </div>
+      <div class="repo-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG1GUnaMFmWkjZhzzAt0KUhb8pKDeXqXRW-Q&s" alt="Icono Proyecto" />
+        <h3>Crudzocial</h3>
+        <a href="https://san1000-ark.github.io/Crudzocial/" target="_blank">Ver repositorio</a>
+      </div>
+      <div class="repo-card">
+        <img src="https://img.freepik.com/foto-gratis/prueba-codigo-renderizado-3d-prueba-usabilidad-funcional_107791-16607.jpg?w=600&h=400&fit=crop" alt="Icono Proyecto" />
+        <h3>Entrenamiento-MOD3_SEM3</h3>
+        <a href="https://vanessa55-rgb.github.io/Entrenamiento-MOD3_SEM3/" target="_blank">Ver repositorio</a>
+      </div>
+      <div class="repo-card">
+        <img src="https://img.freepik.com/vector-premium/creacion-redes-aplicaciones-lenguajes-programacion_999616-2748.jpg?w=600&h=400&fit=crop" alt="Icono Proyecto" />
+        <h3>Eventos</h3>
+        <a href="https://brandonsm11.github.io/Crudsazo-Event/" target="_blank">Ver repositorio</a>
+      </div>
+      <div class="repo-card">
+        <img src="https://img.freepik.com/foto-gratis/prueba-codigo-renderizado-3d-prueba-usabilidad-funcional_107791-16607.jpg?w=600&h=400&fit=crop" alt="Icono Proyecto" />
+        <h3>Entrenamiento-MOD3_SEM4</h3>
+        <a href="https://vanessa55-rgb.github.io/Entrenamiento-MOD3_SEM4/" target="_blank">Ver repositorio</a>
+      </div>
+      <div class="repo-card">
+        <img src="https://img.freepik.com/vector-gratis/ilustracion-colorida-programador-trabajando_23-2148281410.jpg?ga=GA1.1.626444409.1750565419&semt=ais_hybrid&w=740" alt="Icono Proyecto" />
+        <h3>Final</h3>
+        <a href="https://github.com/Vanessa55-rgb/Prueba-JavaScript.git" target="_blank">Ver repositorio</a>
       </div>
     </div>
+  </section>
 
-    <!-- Not Found View -->
-    <div id="not-found-view" class="text-center d-none">
-      <h1 class="text-danger">404 - Page Not Found</h1>
-      <a href="#" id="back-home" class="btn btn-primary mt-3">Go Home</a>
+  <section class="contacto" id="contacto">
+    <h2>Contáctame</h2>
+    <div class="contact-links">
+      <a href="mailto:vanessagomezlopez5@gmail.com">📧 Email</a>
+      <a href="https://github.com/Vanessa55-rgb" target="_blank">🐙 GitHub</a>
     </div>
+  </section>
 
-  </div>
+  <footer>
+    <p>&copy; 2025 Vanessa Gómez | Diseñado por Vanessa Gómez</p>
+  </footer>
 
-  <script src="./index.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
